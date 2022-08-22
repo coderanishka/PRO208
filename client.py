@@ -9,7 +9,22 @@ IP_ADDRESS = '127.0.0.1'
 SERVER = None
 BUFFER_SIZE = 4096
 
+
+name = None
+listbox = None
+filePathLabel = None
+global soung_counter
+song_counter = 0
+
+
 def musicWindow():
+    
+    
+    global song_counter
+    global filePathLabel
+    global listbox
+    global infoLabel
+
     window = Tk()
     window.title('music Window')
     window.geometry("300x300")
